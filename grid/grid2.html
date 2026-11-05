@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid2.css">
+    <title>Document</title>
+    <style>
+        form{
+            width: 500px;
+            display: grid;
+            grid-template-columns: [label-start] auto [label-end control-start] 1fr [control-end];
+            grid-template-rows: repeat(4, 3rem);
+            gap: 1rem
+        }
+
+        label{
+            grid-column: label-start
+        }
+
+        input, textarea{
+            grid-column: control-start;
+        }
+
+        .input[type="submit"]{
+            grid-column: label-start / control-end;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="form">
+        <label for="">Введите имя</label>
+        <input type="text">
+
+        <label for="">Введите почту</label>
+        <input type="email">
+
+        <label for="">Введите сообщение</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

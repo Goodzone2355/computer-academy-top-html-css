@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            min-height: 100vh;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background: black;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-inner{
+            display: flex;
+            align-items: center;
+            margin-left: 3rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin-right: 100px;
+        }
+
+        p{
+
+            font-size: 16px;
+        }
+
+        .logo{
+            font-size: 30px;
+        }
+        
+        main{
+            background: yellow;
+            height: 100vh;
+        }
+
+        aside{
+            background: yellowgreen;
+        }
+
+        footer{
+            background: grey;
+        }
+
+        .main-img{
+            width: 70px;
+            object-fit: cover;
+        }
+
+        .item{
+            display: grid;
+            grid-template-columns: 80px 1fr;
+
+        }
+
+        @media(min-width: 768px){
+        body{
+            display: grid;
+            grid-template-columns: 1fr 20vw;
+            grid-template-rows: 80px 1fr auto;
+            grid-template-areas: 
+            "header header "
+            "main aside"
+            "footer footer"
+        }
+
+        header{
+            grid-area: header;
+            background: black;
+        }
+        
+        main{
+            grid-area: main;
+            background: yellow;
+        }
+
+        aside{
+            grid-area: aside;
+            background: yellowgreen;
+        }
+
+        footer{
+            grid-area: footer;
+            background: grey;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="#">Lorem site</a>
+            <a href="#">News</a>
+            <a href="#">Events</a>
+            <a href="#">Courses</a>
+            <a href="#">Jobs</a>
+            <a href="#">Test</a>
+        </div>
+    </header>
+
+        <main>main</main>
+        <aside>
+            <div class="main-inner">
+                <h2>Events</h2>
+                <div class="item">
+                    <img class="main-img" src="img/calendar_7.png" alt="" srcset="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nihil!</p>
+                </div>
+
+                <div class="item">
+                    <img class="main-img" src="img/calendar_7.png" alt="" srcset="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nihil!</p>
+                </div>
+
+                <div class="item">
+                    <img class="main-img" src="img/calendar_7.png" alt="" srcset="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nihil!</p>
+                </div>
+
+                <div class="item">
+                    <img class="main-img" src="img/calendar_7.png" alt="" srcset="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nihil!</p>
+                </div>
+
+                <div class="item">
+                    <img class="main-img" src="img/calendar_7.png" alt="" srcset="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nihil!</p>
+                </div>
+
+                <div class="item">
+                    <img class="main-img" src="img/calendar_7.png" alt="" srcset="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nihil!</p>
+                </div>
+            </div>
+        </aside>
+    <footer>footer</footer>
+</body>
+</html>

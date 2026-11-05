@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section class="block-form">
+            <form class="feedback" method="GET" name="feedback" id="feedback">
+                <h1>Lorem, ipsum dolor</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione temporibus exercitationem atque illum eum?</p>
+                <div class="form-control group-row">
+                    <input type="text" id="username" name="username" placeholder="Ваше имя" required>
+                    <input type="email" id="useremail" name="useremail" placeholder="Ваш e-mail" required>
+                </div>
+
+                <div class="form-control group-row_start">
+                        <label>Ваш возраст:</label>
+                    <div>
+                        <input type="radio" value="under18" name="age" id="under18">
+                        <label for="under18">До 18 лет</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="older18" name="age" id="older18">
+                        <label for="older18">Старше 18 лет</label>
+                    </div>
+                </div>
+    
+                <div class="form-control">
+                    <textarea name="usermessage" id="usermessage" cols="30" rows="10" required placeholder="Сообщение"></textarea>
+                </div>
+    
+                <div class="form-control-submit">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

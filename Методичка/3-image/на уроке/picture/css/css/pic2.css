@@ -1,0 +1,29 @@
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+ body{
+ 	background-color: #000;
+ 	background-image:url(https://source.unsplash.com/user/erondu/1600x1900);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-attachment: fixed;
+ 	background-position: 0 0 ;
+
+
+/*background: #000 url() no-repeat 0 0;
+background-size: cover;
+background-attachment: fixed;*/
+ }
+ .wrapper{
+ 	width: 900px;
+ 	margin: 0 auto;
+ 	background-color: rgba(190,120,50,0.6);
+ 	padding: 20px 30px;
+ }
+ p{
+ 	font-size: 24px;
+ 	line-height: 32px;
+ 	margin: 20px 0;
+ }

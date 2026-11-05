@@ -1,0 +1,44 @@
+ol {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 3px;
+    transition: 2s;
+}
+
+.list>li::before{
+    content: "\f054";
+    font-family: FontAwesome;
+    display: inline-block;
+    background-color: rgb(151, 72, 33);
+    color: #ffffff;
+    font-size: 10px;
+    transition: 2s;
+    margin-right: 4px;
+}
+
+.list>li:hover::before{
+    content: "\f078";
+    font-family: FontAwesome;
+    display: inline-block;
+    background-color: darkblue;
+    transition: 2s;
+}
+
+.after::after{
+    content: "\f322";
+    font-family: FontAwesome;
+    display: inline-block;
+}
+
+
+
+
+
+
+.list-2>li::before{
+    content: "\f054";
+    font-family: FontAwesome;
+    display: inline-block
+}

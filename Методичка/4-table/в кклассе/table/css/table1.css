@@ -1,0 +1,23 @@
+.table{
+	width: 100%;
+	border:1px solid grey;
+	border-collapse: collapse;
+     font-family: sans-serif;
+	/*border-spacing: 2px; 
+	background:  url(https://img.freepik.com/premium-vector/abstract-silver-texture_546559-1137.jpg);
+*/
+}
+td,th{
+	border:1px solid grey; 
+	background: #fff;
+	width: 50%;
+}
+th{
+	font-weight: normal;
+	text-align: left;
+}
+caption{
+	font-size: 1.2rem;
+	text-align: left;
+	margin-bottom: 1.5rem;
+}

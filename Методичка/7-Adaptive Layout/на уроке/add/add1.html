@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body,.container{
+            min-height: 100vh;
+        }
+        .container{
+            width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            border: 1px solid grey;
+            justify-content: space-between;
+        }
+        .item{
+            width: 30%;
+            height: 200px;
+            background: #000;
+        }
+
+        @media all and (max-width: 1024px){
+            .container{
+                    width: 768px;                    
+                    border: 1px solid green;                    
+             }
+            .item{                
+                height: 50vh;
+                background: green;
+            }
+        }
+
+        @media all and (max-width: 768px){    
+            .container{
+                width: 100%;
+                border: 1px solid blue; 
+                flex-wrap: wrap;
+            }
+            .item{ 
+                width: 100%;
+                background: blue;
+             }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"> 1</div>
+        <div class="item"> 2</div>
+        <div class="item"> 3</div>
+    </div>
+</body>
+</html>

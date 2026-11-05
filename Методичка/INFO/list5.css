@@ -1,0 +1,49 @@
+ol{
+	list-style: none;
+}
+/*формируем отступы*/
+li{
+	margin-bottom: 5px;
+	
+}
+/*при наведении*/
+.list>li::before{/**/
+	content: "\f138";
+	font-family: FontAwesome;
+	display: inline-block;
+	background: red;color: white;
+	font-size: 10px;
+	padding: 5px;
+	margin-right: 3px;
+
+}
+.list>li:hover::before{
+	content: "\f113a";
+	font-family: FontAwesome;
+	display: inline-block;
+	background: #168CBD;
+	padding: 3px 1px;
+	transition: 3s;
+	
+
+
+}
+
+/*обавляем иконку. все повторить по- порядку*/
+.list1>li::before{
+	content: "\f13a";
+	font-family: FontAwesome;
+	display: inline-block;
+	background: green;
+font-size: 10px;
+padding: 3px;
+}
+/**/
+
+ 
+.after::after{
+	content: "\f322";
+	font-family: FontAwesome;
+	display: inline-block;
+
+}

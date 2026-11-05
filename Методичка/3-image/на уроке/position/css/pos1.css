@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar{
+	height: 60px;
+	background: #4B4A4A;
+}
+ul{
+	list-style: none;
+}
+
+.menu__item{
+	display: inline-block;
+	margin-left: 50px;
+}
+.menu__link{
+	display: inline-block;
+	/*высота элемента*/
+	height: 60px;
+	/*высота линии*/
+	line-height: 60px;
+	color: white;
+	text-decoration: none;
+	padding: 0 20px;
+}
+.menu__item:hover{
+	background: #ADE9EB;
+}
+.dropdown:hover  .dropdown-menu{
+   display: block;
+}
+.dropdown{
+	position: relative;
+}
+.dropdown-menu{
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	width: 200px;
+}
+.dropdown__item{
+	background: #80E7D7;
+	padding: 8px 10px;
+	margin-bottom: 3px;
+}
+

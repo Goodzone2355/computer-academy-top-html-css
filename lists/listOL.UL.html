@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+		.winter {
+			list-style-image: url(img/winter_16.png);
+		}
+
+		.spring {
+			list-style-image: url(img/spring_16.png);
+		}
+
+		.summer {
+			list-style-image: url(img/summer_16.png);
+		}
+
+		.autumn {
+			list-style-image: url(img/autumn_16.png);
+		}
+
+		ul{
+			list-style-image: url(img/autumn_16.png);
+		}
+
+		ol {
+			list-style: disc;
+		}
+		ul>li{
+			color: blue;
+		}
+
+		/*ul li - все ли в уле*/
+
+		ul>li>ol>li {
+			color: brown;
+		}
+
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="winter">Зима
+			<ol>
+				<li>Декабрь</li>
+				<li>Январь</li>
+				<li>Февраль</li>
+			</ol>
+		</li>
+
+		<li class="spring">Весна
+			<ol>
+				<li>Март</li>
+				<li>Апрель</li>
+				<li>Май</li>
+			</ol>
+		</li>
+
+		<li class="summer">Лето
+			<ol>
+				<li>Июнь</li>
+				<li>Июль</li>
+				<li>Август</li>
+			</ol>
+		</li>
+
+		<li class="autumn">Осень
+			<ol>
+				<li>Сентябрь</li>
+				<li>Октябрь</li>
+				<li>Ноябрь</li>
+			</ol>
+		</li>
+	</ul>
+	
+</body>
+</html>

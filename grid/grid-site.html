@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            min-height: 100vh;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background: black;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-inner{
+            display: flex;
+            align-items: center;
+            margin-left: 3rem;
+        }
+
+        /* .container{
+            padding: 3rem;
+        } */
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin-right: 100px;
+        }
+
+        p{
+
+            font-size: 16px;
+        }
+
+        .logo{
+            font-size: 30px;
+        }
+        
+        main{
+            background: yellow;
+            height: 100vh;
+        }
+
+        footer{
+            background: grey;
+        }
+
+        .main-img{
+            width: 70px;
+            object-fit: cover;
+        }
+
+        .main-item-img{
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .item{
+            display: grid;
+            grid-template-columns: 80px 1fr;
+
+        }
+
+        @media(min-width: 768px){
+        body{
+            background-color: rgb(155, 154, 154);
+            display: grid;
+            grid-template-columns: 1fr 30vw;
+            grid-template-rows: 80px 1fr auto;
+            gap: 3rem 2rem;
+            grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer"
+        }
+
+        header{
+            grid-area: header;
+            background: black;
+        }
+        
+        main{
+            grid-area: main;
+            background: rgb(218, 218, 218);
+            margin-left: 3rem;
+            display: grid;
+            grid-template-rows: auto 1fr 1fr;
+            grid-template-columns: 3rem 1fr 3rem;
+        }
+
+        .main-item1{
+            grid-row: 1/2;
+            grid-column: 2/3;
+        }
+
+        .main-item2{
+            grid-row: 2/3;
+            grid-column: 1/-1;
+        }
+
+        .main-item3{
+            grid-column: 2/3;
+        }
+
+        aside{
+            grid-area: aside;
+            margin-right: 3rem;
+            display: grid;
+            grid-template-columns: 3rem 1fr 3rem;
+            grid-template-rows: 80% 15%;
+            gap: 5%
+        }
+
+        .as{
+            grid-column: 1/-1;
+            grid-row: 1/2 ;
+            display: grid;
+            grid-template-columns: 3rem 1fr 3rem;
+            background:rgb(218, 218, 218);
+        }
+
+        .aside-inner{
+            grid-column: 2/3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .as-2{
+            background:rgb(218, 218, 218);
+            grid-column: 1/-1;
+            display: grid;
+            grid-template-columns: 3rem 1fr 3rem;
+        }
+
+        .aside-inner-2{
+            grid-column: 2/3;
+            display: flex;
+            align-items: center;
+        }
+
+        footer{
+            grid-area: footer;
+            background: black;
+            display: grid;
+            grid-template-columns: 3rem 1fr 3rem;
+        }
+
+        .footer-inner{
+            color: white;
+            grid-column: 2/3;
+            display: flex;
+            align-items: center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="#">Lorem site</a>
+            <a href="#">News</a>
+            <a href="#">Events</a>
+            <a href="#">Courses</a>
+            <a href="#">Jobs</a>
+            <a href="#">Test</a>
+        </div>
+    </header>
+
+        <main>
+            <div class="main-item1">
+                <h1>What is Lorem Ipsum?</h1>
+                <p>30/03/2019 11:20</p>
+            </div>
+
+            <div class="main-item2">
+                <img class="main-item-img" src="icons/html5img.png" alt="" srcset="">
+            </div>
+            <div class="main-item3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt temporibus quaerat blanditiis quo voluptas ad dolore! Optio eaque cum maiores, esse quisquam quos voluptatem distinctio nihil quia ipsa sit!
+                Iure velit, nulla magni in excepturi commodi ipsum nemo non sapiente culpa impedit possimus consectetur debitis dignissimos autem reiciendis praesentium magnam laborum porro consequuntur iste pariatur. Veritatis nesciunt recusandae quo.
+                Odio quam illo temporibus incidunt nesciunt omnis, laudantium suscipit fugiat, minima aspernatur adipisci eaque repellat aut id, deserunt quos officiis ea eius dolorem! Reprehenderit quia magnam, molestias numquam illo at?
+                Facilis ad velit corrupti accusantium fugiat quasi ex, soluta asperiores culpa veritatis. Corrupti adipisci praesentium doloremque eveniet facere! Reiciendis maxime odit iste consectetur vitae optio pariatur ad est sapiente similique.
+                Quasi qui mollitia fugit eius, ab sequi tempore inventore nostrum delectus totam ratione. Inventore repellendus itaque nesciunt sed. Nihil, autem ipsam. Quis neque cumque nisi consequuntur recusandae ipsa sequi ipsum.</p>
+            </div>
+        </main>
+
+        <aside>
+            <div class="as">
+            <div class="aside-inner">
+                <h2>Events</h2>
+                <div class="item">
+                    <img class="main-img" src="img/calendar_7.png" alt="" srcset="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nihil!</p>
+                </div>
+
+                <div class="item">
+                    <img class="main-img" src="img/calendar_7.png" alt="" srcset="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nihil!</p>
+                </div>
+
+                <div class="item">
+                    <img class="main-img" src="img/calendar_7.png" alt="" srcset="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nihil!</p>
+                </div>
+
+                <div class="item">
+                    <img class="main-img" src="img/calendar_7.png" alt="" srcset="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nihil!</p>
+                </div>
+
+                <div class="item">
+                    <img class="main-img" src="img/calendar_7.png" alt="" srcset="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, nihil!</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="as-2">
+                <div class="aside-inner-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam excepturi perferendis obcaecati blanditiis! Dolore provident recusandae nesciunt possimus repellendus!</p>
+                </div>
+            </div>
+        </aside>
+    <footer>
+        <div class="footer-inner">
+            <p>&#169 Lorem Site 2022</p>
+        </div>
+    </footer>
+</body>
+</html>

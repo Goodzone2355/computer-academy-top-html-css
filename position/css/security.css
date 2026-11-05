@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+li{
+    background-color: gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 300px;
+    color: rgb(255, 255, 255);
+}
+
+li:hover{
+    background-color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+li.edit::before{
+    padding-right: 30px;
+    margin-left: 20px;
+    content: "\270F";
+    font-family: FontAwesome;
+    color: orange;
+}
+
+li.favorites::before{
+    padding-right: 30px;
+    margin-left: 20px;
+    content: "\2764";
+    font-family: FontAwesome;
+    color: red;
+}
+
+li.history::before{
+    padding-right: 30px;
+    margin-left: 20px;
+    content: "\f017";
+    font-family: FontAwesome;
+    color: rgb(4, 0, 255);
+}
+
+li.security::before{
+    padding-right: 30px;
+    margin-left: 20px;
+    content: "\f3ed";
+    font-family: FontAwesome;
+    color: rgb(255, 174, 0);
+}
+
+li.settings::before{
+    padding-right: 30px;
+    margin-left: 20px;
+    content: "\f1de";
+    font-family: FontAwesome;
+    color: rgb(255, 174, 0);
+}
+
+
+
+
+
+
+
+
+ 
+
+

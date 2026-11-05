@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+     body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+     }
+     
+     ol {
+		counter-reset: list;
+		list-style: none;
+        padding-left: 15px;
+        padding-right: 15px;
+	}
+    
+     li::before{
+			counter-increment: list;
+			content: counter(list) ". ";
+            background-color: rgb(167, 77, 111);
+            text-align: center;
+    }
+
+    li {
+        display: block;
+        background-color: rgb(167, 77, 111);
+        margin-bottom: 5px;
+        width: 300px;
+        padding: 5px;
+        margin:
+        
+    }
+     
+     span {
+        background-color: rgb(161, 43, 112);
+        padding: 5px 10px 5px 10px;
+    }
+
+    div {
+        background-color: rgb(255, 167, 215);
+        display: inline-block;}
+      </style>
+</head>
+<body>
+    <div>
+        <ol>
+            <li><span>Apple</span></li>
+            <li><span>Orange</span></li>
+            <li><span>Pineapple</span></li>
+            <li><span>Pear</span></li>
+            <li><span>Cherry</span></li>
+        </ol>
+    </div>
+</body>
+</html>

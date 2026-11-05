@@ -1,0 +1,78 @@
+*{
+    margin: 20;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    height: 300px;
+}
+
+.uploader{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.image{
+    width: 20%;
+    height: 80%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain
+}
+
+.center{
+    width: 55%;
+    height: 80%;
+}
+
+.shkala{
+    height: 20%;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+h2{
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.button{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: blue;
+    color: white;
+}
+
+@media all and (max-width:600px){
+    .container{
+        width: 100%; 
+        
+    }
+
+    .uploader{
+        height: auto;
+        display: block;
+    }
+
+    .image, .center, .button{
+        width: 100%;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,42 @@
+.nav_main{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -7.5px;
+    background: #131C55;
+    margin: 0;
+    padding: 0;
+}
+
+.padding_top{
+    padding-top: 70px;
+}
+
+.nav .nav-link{
+    color: white !important;
+}
+
+.margin-left{
+    margin-left: 0;
+}
+
+.vpravo{
+    position: relative;
+    top: 350px;
+}
+
+.border-radius{
+    border-radius: 50%;
+}
+
+.card-header, .card-body{
+    background: #131C55; 
+}
+
+.card{
+    border: 0;
+}
+
+.color{
+    background-color: #131C55;;
+}

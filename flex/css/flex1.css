@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    height: 300px;
+    margin: 0 auto;
+    background: rgb(137, 111, 111);
+    justify-content: center;   
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    display: flex;
+    background: yellowgreen;
+    width: 100px;
+    height: 100px;
+    margin: 0 3px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 150px;
+}
+
+.item p{
+    width: 30px;
+    height: 30px;
+    background-color: cadetblue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+    

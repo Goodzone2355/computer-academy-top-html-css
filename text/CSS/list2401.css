@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    display: inline-block;
+    outline: 2px solid grey;
+    width: 400px; 
+
+}
+
+h1{
+    margin-left: 25px;
+}
+
+ul {
+    
+    margin-top: 5px;  
+}
+
+ul>li>ul {
+    margin-left: -20px; 
+    list-style: disc;
+}
+
+li{
+    padding-bottom: 5px;  
+}
+
+
+
+
+
+
+
+

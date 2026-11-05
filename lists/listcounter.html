@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		ol {
+		counter-reset: list;
+		list-style: none;
+		font-size: 2rem
+		}
+
+		li::before{
+			counter-increment: list;
+			content: counter(list);
+			color: red;
+			font-weight: bold;
+			background-color: black;
+			/*padding: 10px;*/
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin-right: 10px;
+			border-radius: 60%;
+			text-align: center;
+			/*однострочный*/
+			line-height: 50px; 
+			border: 5px solid white;
+
+		}
+
+		li {
+			margin-bottom: 20px;
+			padding: 10px 0;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+
+		li:hover{
+			background-color: #eee;
+			cursor: pointer;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+<h2>Результат проекта</h2>
+<ol>
+	<li>Работающая новая стратегия, новые идеи, новые продукты</li>
+	<li>Трансформация бизнеса и команды</li>
+	<li>Амбициозные и достижимые цели бизнеса и команды</li>
+	<li>Фокусировка и скоординированность действий</li>
+	<li>Освоение методологии разработки стратегии</li>
+	<li>Рост, развитие и капитализация бизнеса</li>
+</ol>
+	
+</body>
+</html>

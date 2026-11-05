@@ -1,0 +1,55 @@
+ol,ul{
+	list-style: none;
+}
+li{
+	margin-bottom: 2px;
+	
+}
+
+.list>li::before{
+	content: "\f054";
+	font-family: FontAwesome;
+	display: inline-block;
+	margin-right:2px;
+	background: orange;
+	/*цвет текста*/
+	color: white;
+	/*размер*/
+	font-size: 14px;
+	/*отсупы*/
+	padding: 3px;
+	transition: 1s;
+}
+/*при наведении*/
+.list>li:hover::before{
+	content: "\f078";
+	font-family: FontAwesome;
+	display: inline-block;
+	padding: 3px 1px;
+	background: #157CBD;
+	transition: 1s;
+}
+
+
+
+.list-inset>li::before{
+	content: "\f14b";
+	font-family: FontAwesome;
+	display: inline-block;
+
+
+    background: #498895;
+	/*цвет текста*/
+	color: white;
+	/*размер*/
+	font-size: 10px;
+	/*отсупы*/
+	padding: 1px;
+	border-radius: 2px; 	
+
+}
+.after::after{
+	content: "\f322";
+	font-family: FontAwesome;
+	display: inline-block;
+}

@@ -1,0 +1,54 @@
+table{
+    table-layout: fixed;
+    width: 600px;
+    font-family: sans-serif;
+    border-collapse: collapse;
+}
+
+th, td{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+thead{
+    background-color: rgb(87, 202, 202);
+}
+
+tbody th:nth-child(1) {background-color: rgb(87, 202, 202);}
+tbody tr:nth-child(2n) {background-color: rgb(202, 202, 202);}
+
+
+thead tr
+{position: sticky; 
+top: 0px; 
+background-color: rgb(87, 202, 202);}
+
+thead th:first-child 
+{position: sticky; 
+left: 0px; 
+background-color: rgb(87, 202, 202);}
+
+tbody th 
+{position: sticky; 
+left: 0px; 
+top: 50px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

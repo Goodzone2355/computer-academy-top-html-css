@@ -1,0 +1,117 @@
+@import  "var.less";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flexex(@dir: row, @justify: space-between, @align: center){
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.borderex(@colorBorder: @color){
+    border: 1px solid @colorBorder;
+}
+.borderRadius(){
+    border-radius: 5px;
+}  
+.boxShadow(@colorShad: @color){
+    box-shadow: 2px 2px 8px 3px @colorShad ;
+}
+// @status==primery
+// @status==error
+.btnStyle(@status){
+  &--@{status}{
+    background-color:@@status;  
+    &:hover{
+        background-color:lighten(@@status,20%);
+        cursor: pointer; 
+    }
+  }
+}
+
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.main{
+    h1{
+       font-size: @sizeH1;
+       color: @color;
+       font-family: Arial;
+       padding: 8px 15px;
+       margin:0 auto; 
+    }
+}
+.product{
+    .flexex;
+    padding: 2rem 3rem ;
+    border: 5px dotted @color;
+    margin: 0 auto;
+
+    .card{
+     width: 20%;
+     min-height: 250px;
+     .flexex(column,space-between,stretch); 
+     .borderex;
+     .borderRadius;
+     .boxShadow;
+
+      &:hover{
+        .borderex(lighten(@color, 20%));
+        .boxShadow(lighten(@color, 20%));
+        cursor: pointer;
+     }
+     &--primery{
+        .borderex(@primery);
+        .boxShadow(@primery);
+         &:hover{
+
+         }
+     }
+     &--succes{
+        .borderex(@colorSucces);
+        .boxShadow(@colorSucces);
+     }
+     &--error{
+        .borderex(@colorError);
+        .boxShadow(@colorError);
+     }
+
+
+
+     &__title{
+        font-size: @sizeH3;
+        text-align: center;
+        color: @color;
+        &--primery{
+            color:@colorPrimery; 
+        }
+        &--succes{
+            color:@colorSucces; 
+        }
+        &--error{
+            color:@colorError; 
+        }
+     }
+     &__footer{
+        text-align: center;
+        margin: 1rem 0;
+     }
+     .btn{
+         width: 90%;
+         background-color:@color;
+         .borderRadius;
+         line-height: 30px;
+         color: white;  
+         
+         .btnStyle(succes);
+         .btnStyle(error);
+         .btnStyle(primery);
+         
+     }
+    }
+}

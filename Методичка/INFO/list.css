@@ -1,0 +1,24 @@
+
+
+
+.list{
+	list-style: none;
+	counter-reset:list;
+}
+
+.list>li::before{
+
+	 counter-increment: list;
+content:counter(list)" ";
+}
+
+.list1{
+	list-style: none;
+	counter-reset: list2;
+}
+	.list1>li::before{
+		counter-increment: list2;
+		content: counter(list)"." counter(list2) " ";
+	}
+
+

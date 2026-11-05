@@ -1,0 +1,52 @@
+.list {
+    counter-reset: list;
+    list-style: none;
+}
+
+div{
+    display: inline-block;
+    background-color: rgb(211, 211, 211);
+    width: 240px;   
+}
+.list>li{
+    display: block;
+    background-color: rgb(228, 130, 130);
+    margin-bottom: 5px;
+    margin-left: -35px;
+    margin-right: 5px;
+}
+
+.list>li::before {
+    counter-increment: list;
+    content: counter(list) " ";
+    background-color: brown;
+}
+
+.list-2 {
+    counter-reset: list-2;
+    list-style: none;   
+}
+
+
+.list-2>li::before {
+    counter-increment: list-2;
+    content: counter(list) "." counter(list-2) " ";
+    background-color: darkolivegreen;
+}
+
+.list-2>li {
+    display: inline-block;
+    background-color: rgb(74, 161, 74);
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+

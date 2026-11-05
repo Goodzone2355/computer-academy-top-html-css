@@ -1,0 +1,49 @@
+.container{
+    width: 1500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    perspective: 330px;
+}
+.flex-item{
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 1s ease;
+}
+
+.one{
+    background: rgb(253, 0, 0);
+}
+
+.two{
+    background: rgb(2, 79, 2);
+}
+
+.three{
+    background: rgb(3, 3, 194);
+    transform-origin: left;
+}
+
+.one:hover{
+    transform: scale(0.5);
+    border-radius: 50%;
+}
+
+.two:hover{
+    transform: translateX(80px);
+}
+
+/* .container:hover .two{
+    transform: translateX(80px) rotate(720deg) scale(0.5);
+} */
+
+.container:hover .three{
+    transform: rotateY(45deg);
+}

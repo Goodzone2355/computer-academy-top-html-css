@@ -1,0 +1,124 @@
+@import "var.less";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flexex(@dir: row, @justify: space-between, @align: center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @dir
+}
+
+.borders(@width: 1px, @line: solid, @colorBorder: @color){
+  border: 1px solid @colorBorder;
+}
+
+.border-radiuses(@radius: 5px){
+    border-radius: @radius;
+}
+
+.box-shadows(@colorShadow: @color){
+    box-shadow: 2px 2px 4px 3px @colorShadow;
+}
+
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.main{
+    h1{
+        font-family: @fontArial;
+        font-size: @sizeH1;
+        color: @color;
+        padding: 8px 15px;
+        margin: 0 auto;
+    }
+}
+
+.product{
+    .flexex();
+    padding: 2rem 3rem;
+    .borders(5px, dotted, @color);
+    margin: 0 auto;
+
+    .card{
+        width: 20%;
+        min-height: 250px;
+        .flexex(column, space-between, stretch);
+        .borders();
+        .border-radiuses();
+        .box-shadows();
+        &:hover{
+            .box-shadows(lighten(@color, 15%));
+            cursor: pointer;
+            .borders(1px, solid, lighten(@color, 25%))
+        }
+    
+    &--primery{
+        .borders(@colorPrimery);
+        .box-shadows(@colorPrimery);
+    }
+
+    &--succes{
+        .borders(@colorSucces);
+        .box-shadows(@colorSucces);
+    }
+
+    &--error{
+        .borders(@colorError);
+        .box-shadows(@colorError);
+    }
+    
+    &__title{
+        color: @color;
+        font-family: @fontArial;
+        font-size: @sizeH3;
+        text-align: center;
+
+    &--primery{
+        color: @colorPrimery
+    }
+
+    &--succes{
+        color: @colorSucces
+    }
+
+    &--error{
+        color: @colorError
+    }
+    }
+
+    &__footer{
+        text-align: center;
+    }
+
+    .btn{
+        width: 90%;
+        margin: 1rem 0;
+        background: @color;
+        line-height: 30px;
+
+    &--primery{
+        background: @primery;
+        box-shadow: @primery  ;
+        &:hover{
+            background:lighten(@primery, 25%);
+            cursor: pointer;
+        }
+    }
+
+    &--succes{
+        background: @colorSucces;
+    }
+
+    &--error{
+        background: @colorError;
+    }
+    }
+    }
+}

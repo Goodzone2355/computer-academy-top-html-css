@@ -1,0 +1,25 @@
+ .table{
+ 	border-collapse: collapse;
+ }
+ td,th{
+ 	/*border: 1px solid grey;*/
+ }
+ /*нечетные строки*/
+ tbody tr:nth-child(2n+1) td{background: rgba(200,200,200,0.7);}
+/*четные строки*/
+ tbody tr:nth-child(2n) td{background: rgba(240,240,240,0.7);}
+
+ /*футер строки*/
+ tfoot tr td{background: rgba(200,200,200,0.7);}
+
+ thead tr th:nth-child(1){
+ 	background: linear-gradient(to right, #9EC5FB,#95B9EC);
+ 	border-radius: 10px 0 0 0 ;
+ }
+ thead tr th:nth-child(2){background: linear-gradient(to right, #94BAEF,#89A6D0);}
+ thead tr th:nth-child(3){background: linear-gradient(to right, #6185B6,#5F799F);}
+
+  thead tr th:last-child{
+ 	background: linear-gradient(to right, #6B92C9,#4C6D9C);
+ 	border-radius: 0 10px 0 0;
+ }

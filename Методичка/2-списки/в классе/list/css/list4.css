@@ -1,0 +1,19 @@
+ol{
+   list-style: none;	
+}
+.list{
+  counter-reset: list;	
+}
+.list>li::before{
+	counter-increment:list ;
+	content: counter(list) "   ";
+}
+.list-inset{
+	counter-reset: list2;
+}
+.list-inset>li::before{
+	counter-increment: list2 ;
+	content: counter(list)"."counter(list2) "   ";
+}
+
+

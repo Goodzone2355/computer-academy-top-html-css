@@ -1,0 +1,42 @@
+.table{
+    width: 100%;
+    font-family: sans-serif;
+    border-collapse: collapse;
+    color: rgb(54, 54, 54);
+}
+
+td, th{
+    padding: 7px;
+    text-align: left;
+}
+thead th:nth-child(1) {background:hsl(236, 100%, 50%)}
+thead th:nth-child(2) {background:hsl(236, 100%, 40%)}
+thead th:nth-child(3) {background:hsl(236, 100%, 30%)}
+thead th:nth-child(4) {background:hsl(236, 100%, 20%)}
+thead th:nth-child(5) {background:hsl(236, 100%, 10%)}
+
+thead{
+    color: white
+}
+
+.radius1{
+    border-radius: 10px 0 0 0;
+}
+
+.radius2{
+    border-radius: 0 10px 0 0;
+}
+
+.radius3{
+    border-radius: 0 0 0 10px;
+}
+
+.radius4{
+    border-radius: 0 0 10px 0;
+}
+
+
+
+
+
+
